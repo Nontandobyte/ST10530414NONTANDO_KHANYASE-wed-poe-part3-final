@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews | Sweet Lips</title>
+  <meta name="description" content="Read what customers say about Sweet Lips lip gloss, balms and fast delivery in South Africa.">
+  <meta name="keywords" content="Sweet Lips reviews, lip gloss reviews, customer reviews">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+<body class="reviews-page">
+  <header class="site-header">
+    <h1 class="brand"><a href="index.html">Sweet Lips</a></h1>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html" aria-current="page">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="social.html">Socials</a></li>
+        <li class="nav-cart"><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Customer Reviews</h2>
+    <p><label for="min-rating">Show reviews with at least: </label><select id="min-rating"><option value="1">1 star</option><option value="3">3 stars</option><option value="4">4 stars</option><option value="5">5 stars</option></select></p>
+    <div id="reviews-list" aria-live="polite"></div>
+    <h3>Leave a Review</h3>
+    <form id="review-form" class="sl-form">
+      <label for="r-name">Your name *</label><input id="r-name" type="text" required minlength="2">
+      <label for="r-rating">Rating *</label><select id="r-rating" required><option value="">Choose...</option><option value="5">5 - Loved it</option><option value="4">4 - Really good</option><option value="3">3 - Okay</option><option value="2">2 - Not great</option><option value="1">1 - Disappointed</option></select>
+      <label for="r-text">Your review *</label><textarea id="r-text" rows="4" required minlength="10"></textarea>
+      <button type="submit">Post Review</button>
+    </form>
+    <p id="review-result" class="result" role="status" hidden></p>
+  </main>
+  <footer>
+    <p>&copy;2026 Sweet Lips. Durban, South Africa</p>
+  </footer>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+<script src="js/minicart.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Enquiry & Quote | Sweet Lips</title>
+  <meta name="description" content="Enquire about Sweet Lips products and get an instant price and availability estimate.">
+  <meta name="keywords" content="product enquiry, lip gloss quote, Sweet Lips availability">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+<body class="enquiry-page">
+  <header class="site-header">
+    <h1 class="brand"><a href="index.html">Sweet Lips</a></h1>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="social.html">Socials</a></li>
+        <li class="nav-cart"><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Product Enquiry</h2>
+    <p>Want a price or to check availability? Fill in the form for an instant estimate. (For general messages, use our <a href="contact.html">contact page</a>.)</p>
+    <form id="enquiry-form" class="sl-form" action="enquiry.html" method="post">
+      <label for="name">Full name *</label><input id="name" name="name" type="text" required minlength="2" autocomplete="name">
+      <label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email">
+      <label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" data-type="phone" required placeholder="067 144 8554">
+      <label for="product">Product *</label><select id="product" name="product" required><option value="">Choose a product...</option><option value="Lip Gloss" data-name="Lip Gloss" data-price="30" data-ltd="0">Lip Gloss - R30</option><option value="Lip Liners" data-name="Lip Liners" data-price="15" data-ltd="0">Lip Liners - R15</option><option value="Lipsticks" data-name="Lipsticks" data-price="45" data-ltd="0">Lipsticks - R45</option><option value="Lip Balms" data-name="Lip Balms" data-price="20" data-ltd="0">Lip Balms - R20</option><option value="Lip Oils" data-name="Lip Oils" data-price="50" data-ltd="0">Lip Oils - R50</option><option value="Lip Tints" data-name="Lip Tints" data-price="45" data-ltd="0">Lip Tints - R45</option><option value="Lip Scrubs" data-name="Lip Scrubs" data-price="60" data-ltd="0">Lip Scrubs - R60</option><option value="Lip Masks" data-name="Lip Masks" data-price="50" data-ltd="0">Lip Masks - R50</option><option value="Package 1 - Mini Pouch Set" data-name="Package 1 - Mini Pouch Set" data-price="120" data-ltd="0">Package 1 - Mini Pouch Set - R120</option><option value="Package 2 - Glow Up Set" data-name="Package 2 - Glow Up Set" data-price="180" data-ltd="0">Package 2 - Glow Up Set - R180</option><option value="Package 3 - Ultimate Lip Lover Set" data-name="Package 3 - Ultimate Lip Lover Set" data-price="320" data-ltd="0">Package 3 - Ultimate Lip Lover Set - R320</option><option value="Metal Applicator Gloss (Limited Edition)" data-name="Metal Applicator Gloss (Limited Edition)" data-price="35" data-ltd="1">Metal Applicator Gloss (Limited Edition) - R35</option><option value="Color-Changing Lip Gloss (Limited Edition)" data-name="Color-Changing Lip Gloss (Limited Edition)" data-price="35" data-ltd="1">Color-Changing Lip Gloss (Limited Edition) - R35</option></select>
+      <label for="quantity">Quantity (1-50) *</label><input id="quantity" name="quantity" type="number" min="1" max="50" value="1" required>
+      <label for="province">Delivery province *</label><select id="province" name="province" required><option value="">Choose...</option><option>KwaZulu-Natal</option><option>Gauteng</option><option>Western Cape</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option></select>
+      <fieldset><legend>Reply to me via</legend>
+        <label class="inline"><input type="radio" name="reply" value="email" checked> Email</label>
+        <label class="inline"><input type="radio" name="reply" value="WhatsApp"> WhatsApp</label></fieldset>
+      <label class="inline"><input type="checkbox" id="gift" name="gift"> Gift wrapping</label>
+      <label class="inline"><input type="checkbox" id="news" name="news"> Send me new drops</label>
+      <label for="notes">Extra notes (optional)</label><textarea id="notes" name="notes" rows="3"></textarea>
+      <button type="submit">Get My Quote</button>
+    </form>
+    <p id="enquiry-result" class="result" role="status" hidden></p>
+  </main>
+  <footer>
+    <p>&copy;2026 Sweet Lips. Durban, South Africa</p>
+  </footer>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+<script src="js/minicart.js"></script>
+</body>
+</html>

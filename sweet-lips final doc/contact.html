@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sweet Lips | Durban, South Africa</title>
+  <meta name="description" content="Contact Sweet Lips by email, WhatsApp or our message form. Find us on the map in Durban, KwaZulu-Natal.">
+  <meta name="keywords" content="contact Sweet Lips, Durban makeup, WhatsApp orders">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+</head>
+<body class="contact-page">
+  <header class="site-header">
+    <h1 class="brand"><a href="index.html">Sweet Lips</a></h1>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="social.html">Socials</a></li>
+        <li class="nav-cart"><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you!</p>
+   
+    <h3>Our Details</h3>
+    <p><b>Location:</b> Durban, KwaZulu-Natal, South Africa</p>
+    <p><b>Email:</b> hello@sweetlips.co.za</p>
+    <p><b>WhatsApp:</b> 067 144 8554</p>
+    <p><b>Business Hours:</b> Mon - Fri: 9am - 5pm</p>
+   
+    <h3>Send Us a Message</h3>
+    <p>For orders, questions, or collabs, fill in the form and we'll get back to you within 24 hours.</p>
+    <form id="contact-form" class="sl-form" action="mailto:hello@sweetlips.co.za" method="post" enctype="text/plain">
+      <label for="c-name">Full name *</label><input id="c-name" name="name" type="text" required minlength="2" autocomplete="name">
+      <label for="c-email">Email *</label><input id="c-email" name="email" type="email" required autocomplete="email">
+      <label for="c-phone">Phone (optional)</label><input id="c-phone" name="phone" type="tel" data-type="phone" placeholder="067 144 8554">
+      <label for="c-type">Type of message *</label>
+      <select id="c-type" name="type" required><option value="">Choose...</option><option>Order</option><option>Question</option><option>Collaboration</option><option>Feedback</option></select>
+      <label for="c-message">Message *</label><textarea id="c-message" name="message" rows="5" required minlength="10"></textarea>
+      <button type="submit">Send Email</button>
+    </form>
+    <p id="contact-result" class="result" role="status" hidden></p>
+    <h3>Find Us</h3>
+    <div id="map" role="region" aria-label="Map of Durban, South Africa"></div>
+  </main>
+  <footer>
+    <p>&copy;2026 Sweet Lips. Durban, South Africa</p>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+<script src="js/minicart.js"></script>
+</body>
+</html>
